@@ -1,6 +1,6 @@
 # OMA Cake — Luxury Bespoke Landing Page
 
-An ultra-refined, high-converting landing page for **OMA Cake**, an haute pâtisserie and architectural confectionery atelier based in Algiers.
+An ultra-refined, high-converting landing page for **OMA Cake**, an haute pâtisserie and architectural confectionery atelier based in Setif, Algeria.
 
 ---
 

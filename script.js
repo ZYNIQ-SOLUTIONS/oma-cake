@@ -57,30 +57,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Zoom-out logic tailored for both Desktop Widescreen and Mobile Portrait
         let ratio;
+        let centerShift_x;
+        let centerShift_y;
+
         if (canvas.width > 992) {
-            // Desktop: zoom out to 0.76 of cover or 0.98 of contain
+            // Desktop: zoom out to 0.76 of cover or 1.05 of contain
             ratio = Math.min(coverRatio * 0.76, containRatio * 1.05);
+            centerShift_x = (canvas.width - img.width * ratio) / 2;
+            centerShift_y = (canvas.height - img.height * ratio) / 2;
         } else if (canvas.width <= 768) {
-            // Mobile Portrait: Ensure the cake core is grand, centered, and fully visible
-            ratio = Math.min(hRatio * 1.35, vRatio * 0.75);
+            // Mobile Portrait: Fit the whole cake sculpture with elegant breathing margins
+            // hRatio * 1.02 guarantees the entire cake (from assembled base to exploded top) fits with ZERO horizontal or vertical crop
+            ratio = hRatio * 1.02;
+            centerShift_x = (canvas.width - img.width * ratio) / 2;
+            // Shift cake upward so it floats gracefully in the open focal zone above the milestone card
+            centerShift_y = (canvas.height - img.height * ratio) / 2 - (canvas.height * 0.08);
         } else {
             // Tablet: fit comfortably with balanced cushion
-            ratio = Math.min(coverRatio * 0.78, containRatio * 1.08);
+            ratio = Math.min(coverRatio * 0.72, containRatio * 1.0);
+            centerShift_x = (canvas.width - img.width * ratio) / 2;
+            centerShift_y = (canvas.height - img.height * ratio) / 2 - 20;
         }
 
-        const centerShift_x = (canvas.width - img.width * ratio) / 2;
-        const centerShift_y = (canvas.height - img.height * ratio) / 2;
-
         // Render matching warm studio ambient backdrop to seamlessly surround zoomed-out video
-        const maxDim = Math.max(canvas.width, canvas.height);
-        const bgGrad = context.createRadialGradient(
-            canvas.width / 2, canvas.height / 2, 50,
-            canvas.width / 2, canvas.height / 2, maxDim / 1.25
-        );
-        bgGrad.addColorStop(0, '#EAE1D7');
-        bgGrad.addColorStop(0.45, '#DECFC0');
-        bgGrad.addColorStop(0.85, '#D1BDA9');
-        bgGrad.addColorStop(1, '#C1AB95');
+        const bgGrad = context.createLinearGradient(0, 0, canvas.width, 0);
+        bgGrad.addColorStop(0, '#BCA488');
+        bgGrad.addColorStop(0.3, '#CDB89E');
+        bgGrad.addColorStop(0.7, '#DECEBA');
+        bgGrad.addColorStop(1, '#E8D7C4');
         context.fillStyle = bgGrad;
         context.fillRect(0, 0, canvas.width, canvas.height);
 

@@ -1768,9 +1768,35 @@ button {
     gap: 1.5rem;
 }
 
+.footer-bottom-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: left;
+}
+
 .copyright {
     font-size: 0.8rem;
     color: rgba(255, 248, 242, 0.5);
+}
+
+.footer-credit {
+    font-size: 0.78rem;
+    color: rgba(255, 248, 242, 0.6);
+    letter-spacing: 0.04em;
+}
+
+.credit-link {
+    color: var(--accent-gold);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.credit-link:hover {
+    color: var(--primary-bg);
+    opacity: 0.95;
 }
 
 .footer-social-links {
@@ -2003,11 +2029,11 @@ button {
         padding: 0.85rem 1.2rem;
     }
 
-    /* Hero Milestones */
+    /* Hero Milestones on Mobile */
     .hero-story-container {
-        left: 1rem;
-        right: 1rem;
-        bottom: 4.2rem;
+        left: 1.1rem;
+        right: 1.1rem;
+        bottom: 2rem;
     }
 
     .hero-milestone {
@@ -2016,7 +2042,26 @@ button {
         left: 0 !important;
         right: 0 !important;
         transform: translateY(15px) !important;
-        padding: 1.2rem 1.4rem;
+        padding: 1rem 1.25rem;
+        box-shadow: 0 10px 30px rgba(59, 42, 32, 0.12);
+        border: 1px solid rgba(197, 160, 89, 0.45);
+    }
+
+    .hero-milestone .milestone-step {
+        font-size: 0.65rem;
+        margin-bottom: 0.3rem;
+        letter-spacing: 0.15em;
+    }
+
+    .hero-milestone .milestone-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.35rem;
+        line-height: 1.25;
+    }
+
+    .hero-milestone .milestone-desc {
+        font-size: 0.82rem;
+        line-height: 1.5;
     }
 
     .hero-milestone.active {
@@ -2024,7 +2069,7 @@ button {
     }
 
     .scroll-indicator {
-        bottom: 1.2rem;
+        bottom: 0.8rem;
     }
 
     /* Features / Essence */
@@ -2219,6 +2264,10 @@ button {
         flex-direction: column;
         text-align: center;
         gap: 1.2rem;
+    }
+
+    .footer-bottom-info {
+        text-align: center;
     }
 
     .footer-social-links {
