@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FFF8F2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>OMA Cake | Luxury Bespoke Cakes & Haute Pâtisserie</title>
+    <meta name="description" content="OMA Cake — Bespoke luxury cakes, timeless moments. Haute pâtisserie and architectural confectionery crafted with passion in Algiers.">
+    <link rel="icon" type="image/png" href="./assets/oma_cake_logo_transparent_bg.png">
+    
+    <!-- Open Graph / WhatsApp / Facebook / Instagram Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OMA Cake | Luxury Bespoke Cakes & Haute Pâtisserie">
+    <meta property="og:description" content="Sculptural confectionery architecture meets the sublime harmony of French artisan flavours. Handcrafted exclusively for premier celebrations in Algiers.">
+    <meta property="og:image" content="./assets/oma_cake_logo_transparent_bg.png">
+    
+    <!-- Twitter / X Previews -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OMA Cake | Luxury Bespoke Cakes & Haute Pâtisserie">
+    <meta name="twitter:description" content="Sculptural confectionery architecture meets the sublime harmony of French artisan flavours. Handcrafted exclusively for premier celebrations in Algiers.">
+    <meta name="twitter:image" content="./assets/oma_cake_logo_transparent_bg.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Luxury Preloader -->
+    <div class="loader" id="preloader" role="progressbar" aria-label="Loading OMA Cake atelier">
+        <div class="loader-inner">
+            <div class="loader-logo-wrap">
+                <div class="loader-ring"></div>
+                <img src="./assets/oma_cake_loader.PNG" alt="OMA Cake Atelier" class="loader-img">
+            </div>
+            <div class="loader-brand-title">OMA CAKE</div>
+            <div class="loader-tagline">HAUTE PÂTISSERIE • BESPOKE CREATIONS</div>
+            <div class="loader-progress-track">
+                <div class="loader-progress-bar" id="loader-bar"></div>
+            </div>
+            <div class="loader-counter" id="loader-counter">0%</div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#hero" class="brand-logo" aria-label="OMA Cake Home">
+                <img src="./assets/oma_cake_logo_cropped.png" alt="OMA Cake" class="header-logo-img">
+                <span class="brand-name">OMA CAKE</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Essence</a>
+                <a href="#before-after" class="nav-link">Transformation</a>
+                <a href="#gallery" class="nav-link">Haute Collections</a>
+                <a href="#experience" class="nav-link">The Experience</a>
+                <a href="#about" class="nav-link">The Atelier</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/213779811066?text=Hello%20OMA%20Cake,%20I%20would%20like%20to%20inquire%20about%20a%20bespoke%20cake%20commission." target="_blank" rel="noopener" class="btn btn-nav">
+                    <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.17 8.19 0 0 1-1.25-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.45.06-.69.32-.23.25-.89.87-.89 2.12s.91 2.46 1.04 2.63c.13.17 1.79 2.73 4.33 3.83.6.26 1.08.42 1.45.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+                    </svg>
+                    <span>Reserve Commission</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="mobile-drawer-inner">
+            <div class="mobile-nav-links">
+                <a href="#hero" class="mobile-link">Home</a>
+                <a href="#features" class="mobile-link">Essence</a>
+                <a href="#before-after" class="mobile-link">Transformation</a>
+                <a href="#gallery" class="mobile-link">Haute Collections</a>
+                <a href="#experience" class="mobile-link">The Experience</a>
+                <a href="#about" class="mobile-link">The Atelier</a>
+            </div>
+            <div class="mobile-drawer-contact">
+                <a href="https://wa.me/213779811066" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+                    <span>Contact via WhatsApp</span>
+                </a>
+                <p class="mobile-contact-line">Algiers, Algeria • +213 7 79811066</p>
+                <div class="mobile-socials">
+                    <a href="https://www.instagram.com/oma___cakes" target="_blank" rel="noopener">Instagram: @oma___cakes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Backdrop Overlay -->
+    <div class="mobile-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+
+    <!-- Hero Section (Scroll-Tied Canvas Animation) -->
+    <section class="hero" id="hero">
+        <div class="hero-sticky-wrap">
+            <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+            <!-- Hero Initial Editorial Overlay (High-Contrast Clarified Plaque) -->
+            <div class="hero-content hero-plaque" id="hero-content">
+                <div class="hero-badge">L'ATELIER DE HAUTE PÂTISSERIE • ALGIERS</div>
+                <h1 class="hero-title">OMA Cake</h1>
+                <p class="hero-subtitle">Luxury Cakes, Timeless Moments</p>
+                <div class="hero-divider-gold"></div>
+                <p class="hero-description">Where sculptural confectionery architecture meets the sublime harmony of French artisan flavours. Handcrafted exclusively for premier celebrations.</p>
+                <div class="hero-cta-group">
+                    <a href="#gallery" class="btn btn-primary">View Collections</a>
+                    <a href="#before-after" class="btn btn-ghost">Explore Craftsmanship</a>
+                </div>
+            </div>
+
+            <!-- Scroll Progress Story Milestones (Revealed as cake explodes on scroll) -->
+            <div class="hero-story-container" id="hero-story">
+                <div class="hero-milestone milestone-1" data-frame-start="15" data-frame-end="55">
+                    <span class="milestone-step">STAGE 01 / THE ARCHITECTURE</span>
+                    <h3>Piedmont Praline & Madagascan Core</h3>
+                    <p>Engineered structural tiers balanced with slow-whipped chocolate ganache and feuilletine crisp.</p>
+                </div>
+                <div class="hero-milestone milestone-2" data-frame-start="60" data-frame-end="105">
+                    <span class="milestone-step">STAGE 02 / THE CONFECTIONERY ANATOMY</span>
+                    <h3>Single-Origin Valrhona Cocoa Layers</h3>
+                    <p>Meticulously layered mousse, velvet infused sponge, and delicate artisan balance in every millimeter.</p>
+                </div>
+                <div class="hero-milestone milestone-3" data-frame-start="110" data-frame-end="151">
+                    <span class="milestone-step">STAGE 03 / THE BESPOKE CROWNING</span>
+                    <h3>24K Gold Leaf & Sugar Petals</h3>
+                    <p>Each centerpiece is completed with bespoke hand-painted detailing tailored exclusively for your celebration.</p>
+                </div>
+            </div>
+
+            <!-- Luxury Scroll Indicator -->
+            <div class="scroll-indicator" id="scroll-indicator">
+                <span class="scroll-text">SCROLL TO EXPLORE ARCHITECTURE</span>
+                <div class="scroll-line">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Essence / Features Section (4 Columns) -->
+    <section class="features" id="features">
+        <div class="section-header text-center">
+            <span class="section-tag">THE ATELIER PROMISE</span>
+            <h2 class="section-title">The Pillars of Bespoke Luxury</h2>
+            <p class="section-subtitle">Every creation from OMA Cake is an exclusive haute couture commission, never mass produced.</p>
+        </div>
+
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-num">I</div>
+                <div class="feature-icon-wrap">
+                    <!-- Elegant Cake SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/>
+                        <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/>
+                        <path d="M2 21h20"/>
+                        <path d="M7 8v3"/>
+                        <path d="M12 8v3"/>
+                        <path d="M17 8v3"/>
+                        <path d="M7 4h.01"/>
+                        <path d="M12 4h.01"/>
+                        <path d="M17 4h.01"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Crafted with Love</h3>
+                <p class="feature-desc">Individual bespoke sketches and hand-sculpted architectural profiles tailored to your aesthetic vision.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-num">II</div>
+                <div class="feature-icon-wrap">
+                    <!-- Elegant Leaf / Ingredients SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Premium Ingredients</h3>
+                <p class="feature-desc">Single-origin Valrhona chocolate, organic Tahitian vanilla beans, and certified edible 24-karat gold leaf.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-num">III</div>
+                <div class="feature-icon-wrap">
+                    <!-- Elegant Experience / Gift Box SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="21 8 21 21 3 21 3 8"/>
+                        <rect x="1" y="3" width="22" height="5"/>
+                        <line x1="10" y1="12" x2="14" y2="12"/>
+                        <line x1="12" y1="3" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Elegant Experience</h3>
+                <p class="feature-desc">White-glove climate-monitored delivery and on-site concierge assembly at your venue of choice.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-num">IV</div>
+                <div class="feature-icon-wrap">
+                    <!-- Elegant Heart / Memories SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Timeless Memories</h3>
+                <p class="feature-desc">Sculptural centerpieces designed to evoke wonder and immortalize weddings, galas, and milestones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before / After Section (The Art of Transformation) -->
+    <section class="before-after" id="before-after">
+        <div class="section-header text-center">
+            <span class="section-tag">COUTURE REVELATION</span>
+            <h2 class="section-title">The Art of Transformation</h2>
+            <p class="section-subtitle">Slide across to explore the journey from structural artisan ganache to an immaculate velvet finish.</p>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slider-container" id="slider-container" role="region" aria-label="Before and After Cake Comparison Slider">
+                <!-- Before Layer -->
+                <div class="slider-image before-image" style="background-image: url('./assets/before_cake.png');" aria-label="Structural Crumb & Ganache Cake Stage">
+                    <div class="slider-badge badge-before">
+                        <span class="badge-phase">PHASE I</span>
+                        <span class="badge-title">Structural Architecture</span>
+                    </div>
+                </div>
+
+                <!-- After Layer (revealed via clip-path) -->
+                <div class="slider-image after-image" id="after-image" style="background-image: url('./assets/after_cake.png');" aria-label="Finished Velveteen Masterpiece">
+                    <div class="slider-badge badge-after">
+                        <span class="badge-phase">PHASE II</span>
+                        <span class="badge-title">Velveteen Haute Finish</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Handle -->
+                <div class="slider-handle" id="slider-handle">
+                    <div class="slider-handle-line"></div>
+                    <div class="slider-handle-btn" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                        <span class="handle-center-dot"></span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-instructions">
+                <span class="slider-hint">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M3 12h18"/>
+                    </svg>
+                    Drag or tap anywhere to compare the metamorphosis
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery & Collections: High-Complexity Luxury Bento Grid -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-header-wrap">
+            <div class="section-header text-left">
+                <span class="section-tag">CURATED BENTO ARCHIVES</span>
+                <h2 class="section-title">Visual Gallery & Collections</h2>
+                <p class="section-subtitle">An architectural bento showcase highlighting bespoke store creations, artisan standards, and couture tiers.</p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="gallery-filters" role="tablist" aria-label="Gallery Categories">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Pieces</button>
+                <button class="filter-btn" data-filter="weddings" role="tab" aria-selected="false">Weddings</button>
+                <button class="filter-btn" data-filter="botanical" role="tab" aria-selected="false">Botanical</button>
+                <button class="filter-btn" data-filter="gilded" role="tab" aria-selected="false">24K Gilded</button>
+                <button class="filter-btn" data-filter="decadence" role="tab" aria-selected="false">Dark Cocoa</button>
+            </div>
+        </div>
+
+        <!-- High-Complexity Bento Grid Container -->
+        <div class="bento-grid" id="bento-grid">
+            <!-- Bento 1: Grand Featured Wedding Piece (spans 2 cols, 2 rows) -->
+            <div class="bento-card bento-hero-tile" data-category="weddings gilded">
+                <div class="bento-media" style="background-image: url('./assets/gallery/storefront-5-assembled-sovereign.png');"></div>
+                <div class="bento-overlay">
+                    <div class="bento-content">
+                        <div class="bento-tag-row">
+                            <span class="bento-tag">SIGNATURE WEDDING COUTURE</span>
+                            <span class="bento-badge-pill">EDITION 2026</span>
+                        </div>
+                        <h3 class="bento-title">The Royal Velveteen Sovereign</h3>
+                        <p class="bento-desc">Architectural multi-tier confection featuring Tahitian vanilla bean sponge, slow-whipped praline ganache, and hand-gilded 24K leaf.</p>
+                        <div class="bento-meta-bar">
+                            <span class="bento-flavour">Tahitian Vanilla • Caramelized Pecan • 24K Gold</span>
+                            <a href="https://wa.me/213779811066?text=Inquiring%20about%20The%20Royal%20Velveteen%20Sovereign" target="_blank" rel="noopener" class="bento-action-btn">Commission &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento 2: Tall Portrait Naked Berry Cake (spans 1 col, 2 rows) -->
+            <div class="bento-card bento-tall-tile" data-category="botanical">
+                <div class="bento-media" style="background-image: url('./assets/gallery/storefront-2-naked-berry.png');"></div>
+                <div class="bento-overlay">
+                    <div class="bento-content">
+                        <span class="bento-tag">HAUTE BOTANICAL</span>
+                        <h3 class="bento-title">L'Élégance Sauvage</h3>
+                        <p class="bento-desc">Delicate semi-naked tiers crowned with fresh autumn figs, blackberries, and aromatic rosemary.</p>
+                        <div class="bento-meta-bar">
+                            <span class="bento-flavour">Wild Forest Berry • Almond Frangipane</span>
+                            <a href="https://wa.me/213779811066?text=Inquiring%20about%20L%27Elegance%20Sauvage" target="_blank" rel="noopener" class="bento-action-btn">Commission &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento 3: Square Gilded Cream Cake (1 col, 1 row) -->
+            <div class="bento-card bento-square-tile" data-category="gilded">
+                <div class="bento-media" style="background-image: url('./assets/gallery/storefront-3-gold-cream.png');"></div>
+                <div class="bento-overlay">
+                    <div class="bento-content">
+                        <span class="bento-tag">GILDED ATELIER</span>
+                        <h3 class="bento-title">L'Opéra Doré</h3>
+                        <p class="bento-desc">Hand-painted 24K gold brush edging with delicate French macarons.</p>
+                        <div class="bento-meta-bar">
+                            <span class="bento-flavour">Ivory Buttercream • Gold Edge</span>
+                            <a href="https://wa.me/213779811066?text=Inquiring%20about%20L%27Opera%20Dore" target="_blank" rel="noopener" class="bento-action-btn">Commission &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento 4: Interactive Atelier Charter & Metrics Widget (1 col, 1 row) -->
+            <div class="bento-card bento-widget bento-charter-tile" data-category="weddings botanical gilded decadence">
+                <div class="bento-widget-inner">
+                    <span class="bento-tag">ATELIER STANDARDS</span>
+                    <h4 class="widget-heading">Couture Confectionery Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-cell">
+                            <span class="metric-val">100%</span>
+                            <span class="metric-lbl">Hand-Sculpted</span>
+                        </div>
+                        <div class="metric-cell">
+                            <span class="metric-val">24K</span>
+                            <span class="metric-lbl">Certified Gold Leaf</span>
+                        </div>
+                        <div class="metric-cell">
+                            <span class="metric-val">36h</span>
+                            <span class="metric-lbl">Cold Maturation</span>
+                        </div>
+                        <div class="metric-cell">
+                            <span class="metric-val">0%</span>
+                            <span class="metric-lbl">Additives</span>
+                        </div>
+                    </div>
+                    <div class="widget-status-row">
+                        <span class="status-pulse-dot"></span>
+                        <span class="status-text">Atelier Commissions Open in Algiers</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento 5: Square Dark Chocolate Drip Cake (1 col, 1 row) -->
+            <div class="bento-card bento-square-tile" data-category="decadence">
+                <div class="bento-media" style="background-image: url('./assets/gallery/storefront-1-chocolate-drip.png');"></div>
+                <div class="bento-overlay">
+                    <div class="bento-content">
+                        <span class="bento-tag">VALRHONA INTENSE</span>
+                        <h3 class="bento-title">Le Décadent Noir</h3>
+                        <p class="bento-desc">Mirror chocolate drip with dark ganache rosettes, raspberries, and cocoa nibs.</p>
+                        <div class="bento-meta-bar">
+                            <span class="bento-flavour">70% Cocoa • Espresso Ganache</span>
+                            <a href="https://wa.me/213779811066?text=Inquiring%20about%20Le%20Decadent%20Noir" target="_blank" rel="noopener" class="bento-action-btn">Commission &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento 6: Tall Portrait Architectural Shard Cake (1 col, 2 rows) -->
+            <div class="bento-card bento-tall-tile" data-category="decadence">
+                <div class="bento-media" style="background-image: url('./assets/gallery/storefront-4-chocolate-shard.png');"></div>
+                <div class="bento-overlay">
+                    <div class="bento-content">
+                        <span class="bento-tag">AVANT-GARDE STRUCTURE</span>
+                        <h3 class="bento-title">L'Éclat Géométrique</h3>
+                        <p class="bento-desc">Dramatic hand-tempered dark chocolate shards with gold leaf dust, creating an architectural statement.</p>
+                        <div class="bento-meta-bar">
+                            <span class="bento-flavour">Crisp Cocoa Glass • Feuilletine Praliné</span>
+                            <a href="https://wa.me/213779811066?text=Inquiring%20about%20L%27Eclat%20Geometrique" target="_blank" rel="noopener" class="bento-action-btn">Commission &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento 7: Curated Flavour Palette Widget (2 cols, 1 row) -->
+            <div class="bento-card bento-widget bento-flavour-tile" data-category="weddings botanical gilded decadence">
+                <div class="bento-widget-inner">
+                    <div class="flavour-top-row">
+                        <div>
+                            <span class="bento-tag">TASTING REPERTOIRE</span>
+                            <h4 class="widget-heading">Curated Ingredients & Flavours</h4>
+                        </div>
+                        <a href="https://wa.me/213779811066?text=I%20would%20like%20to%20request%20the%20tasting%20menu" target="_blank" rel="noopener" class="flavour-action-link">Full Menu &rarr;</a>
+                    </div>
+                    <p class="flavour-intro">Every tier is infused with rare, ethically sourced ingredients from premier French and Italian suppliers.</p>
+                    <div class="flavour-pill-wrap">
+                        <span class="flavour-chip">Madagascan Bourbon Vanilla</span>
+                        <span class="flavour-chip">Valrhona Dark Cocoa 70%</span>
+                        <span class="flavour-chip">Piedmont Roasted Hazelnut</span>
+                        <span class="flavour-chip">Salted Caramel Fleur de Sel</span>
+                        <span class="flavour-chip">Sicilian Pistachio Paste</span>
+                        <span class="flavour-chip">Wild Raspberry Coulis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento 8: Private Tasting Concierge Tile (1 col, 1 row) -->
+            <div class="bento-card bento-widget bento-concierge-tile" data-category="weddings botanical gilded decadence">
+                <div class="bento-widget-inner">
+                    <span class="bento-tag">ATELIER TASTINGS</span>
+                    <h4 class="widget-heading">Reserve a Tasting Flight</h4>
+                    <p class="concierge-desc">Sample 4 signature flavor pairings before confirming your celebration tier.</p>
+                    <a href="https://wa.me/213779811066?text=Hello%20OMA%20Cake,%20I%20would%20like%20to%20book%20a%20private%20tasting%20box." target="_blank" rel="noopener" class="btn btn-nav btn-full">
+                        <span>Book Tasting Flight</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Bespoke Commission Experience (3-Step Journey) -->
+    <section class="experience" id="experience">
+        <div class="section-header text-center">
+            <span class="section-tag">THE BESPOKE JOURNEY</span>
+            <h2 class="section-title">How We Bring Your Vision to Life</h2>
+            <p class="section-subtitle">From initial taste consultation to the grand unveiling at your celebration venue.</p>
+        </div>
+
+        <div class="experience-steps">
+            <div class="step-card">
+                <div class="step-counter">01</div>
+                <div class="step-content">
+                    <h3 class="step-title">The Private Consultation</h3>
+                    <p class="step-desc">Connect with our atelier via WhatsApp or direct booking to share your event theme, guest count, and flavor preferences.</p>
+                    <span class="step-detail">Tailored Flavor Profiles & Palette Alignment</span>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-counter">02</div>
+                <div class="step-content">
+                    <h3 class="step-title">The Couture Sketch & Prototyping</h3>
+                    <p class="step-desc">Our confectioners craft 3D proportion sketches, determining optimal structural stability and bespoke embellishments.</p>
+                    <span class="step-detail">Architectural Balance & Sugar Sculpting</span>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-counter">03</div>
+                <div class="step-content">
+                    <h3 class="step-title">White-Glove Grand Reveal</h3>
+                    <p class="step-desc">Delivered in temperature-monitored luxury transport and finished by our concierge at your celebration venue.</p>
+                    <span class="step-detail">Flawless Setup & Unforgettable Cutting Moment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (The Atelier & Founder Story) -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-visual">
+                <div class="about-image-frame">
+                    <img src="./assets/after_cake.png" alt="OMA Cake Atelier Masterpiece" class="about-main-img">
+                    <div class="about-badge-seal">
+                        <span class="seal-text">HAUTE PÂTISSERIE</span>
+                        <span class="seal-sub">EST. ALGIERS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text-content">
+                <span class="section-tag">OUR HERITAGE</span>
+                <h2 class="about-heading">Sculptural Confectionery for Life's Defining Moments</h2>
+                <div class="about-paragraphs">
+                    <p>At OMA Cake, we believe that every milestone deserves a timeless centerpiece. What began as an obsession with the purest French pâtisserie traditions has evolved into an architectural cake atelier dedicated to culinary haute couture.</p>
+                    <p>Every tier is engineered for structural balance, coated in velvet-smooth ganaches, and finished with delicate hand-applied 24K gold. When your guests take their first slice, they experience the sublime union of artisan aesthetics and unforgettable flavor.</p>
+                </div>
+
+                <div class="about-quote">
+                    <p class="quote-body">&ldquo;A cake should not simply be eaten; it should be remembered for decades as the sweetest memory of your most cherished celebration.&rdquo;</p>
+                    <span class="quote-author">— The Master Confectioner, OMA Cake Atelier</span>
+                </div>
+
+                <div class="about-actions">
+                    <a href="https://wa.me/213779811066?text=Hello%20OMA%20Cake,%20I%20would%20like%20to%20reserve%20a%20private%20consultation." target="_blank" rel="noopener" class="btn btn-primary">
+                        <span>Reserve a Consultation</span>
+                    </a>
+                    <a href="https://www.instagram.com/oma___cakes" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <span>Follow Our Atelier</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header text-center">
+            <span class="section-tag">CLIENT WORDS</span>
+            <h2 class="section-title">Celebrated by Discerning Hosts</h2>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&starf;&starf;&starf;&starf;&starf;</div>
+                <p class="testimonial-text">&ldquo;The wedding cake OMA created for our reception at the Sheraton was breathtaking. Guests are still talking about the hazelnut praline ganache weeks later.&rdquo;</p>
+                <div class="testimonial-author">
+                    <strong>Amina & Karim B.</strong>
+                    <span>Wedding Gala, Algiers</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&starf;&starf;&starf;&starf;&starf;</div>
+                <p class="testimonial-text">&ldquo;Absolute culinary art. The gold leaf detailing and velvet texture looked like a sculpture out of a Parisian boutique. Perfection in every single slice.&rdquo;</p>
+                <div class="testimonial-author">
+                    <strong>Nadia M.</strong>
+                    <span>Private Soirée Host</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&starf;&starf;&starf;&starf;&starf;</div>
+                <p class="testimonial-text">&ldquo;From our first WhatsApp message to the white-glove setup at our venue, the experience was truly five-star luxury. Thank you, OMA Cake!&rdquo;</p>
+                <div class="testimonial-author">
+                    <strong>Sarah K.</strong>
+                    <span>Milestone Jubilee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section with Transparent Background Logo -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <!-- Column 1: Brand & Transparent Logo -->
+                <div class="footer-col footer-col-brand">
+                    <a href="#hero" class="footer-logo-link" aria-label="OMA Cake Home">
+                        <img src="./assets/oma_cake_logo_transparent_bg.png" alt="OMA Cake Brand Logo" class="footer-logo-img">
+                    </a>
+                    <p class="footer-brand-desc">OMA Cake is an exclusive bespoke cake atelier. We hand-sculpt timeless confectionery centerpieces for luxury weddings, galas, and landmark celebrations.</p>
+                    <div class="footer-badge-pill">HAUTE PÂTISSERIE • ALGIERS</div>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div class="footer-col footer-col-nav">
+                    <h4 class="footer-heading">The Atelier</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#features">Essence & Values</a></li>
+                        <li><a href="#before-after">The Transformation</a></li>
+                        <li><a href="#gallery">Haute Collections</a></li>
+                        <li><a href="#experience">Commission Journey</a></li>
+                        <li><a href="#about">The Confectioner</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Direct Inquiries -->
+                <div class="footer-col footer-col-contact">
+                    <h4 class="footer-heading">Inquiries & Concierge</h4>
+                    <p class="footer-contact-item">
+                        <span class="contact-label">Direct WhatsApp:</span>
+                        <a href="https://wa.me/213779811066" target="_blank" rel="noopener" class="contact-val highlight">+213 7 79811066</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <span class="contact-label">Telephone:</span>
+                        <a href="tel:+213779811066" class="contact-val">+213 7 79811066</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <span class="contact-label">Official Instagram:</span>
+                        <a href="https://www.instagram.com/oma___cakes" target="_blank" rel="noopener" class="contact-val">@oma___cakes</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <span class="contact-label">Atelier Location:</span>
+                        <span class="contact-val">Algiers, Algeria • Worldwide Commissions</span>
+                    </p>
+                </div>
+
+                <!-- Column 4: Newsletter / Private Invitation -->
+                <div class="footer-col footer-col-newsletter">
+                    <h4 class="footer-heading">Private Tasting Circle</h4>
+                    <p class="footer-newsletter-copy">Receive private tasting invitations, seasonal atelier reveals, and festive commission dates.</p>
+                    <form class="footer-newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for joining the OMA Cake Atelier Circle.');">
+                        <div class="input-wrap">
+                            <input type="email" placeholder="Your email address" required aria-label="Email address for private tasting circle">
+                            <button type="submit" aria-label="Submit invitation request">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container bottom-container">
+                <p class="copyright">&copy; 2026 OMA Cake. All Rights Reserved. Crafted with passion & luxury.</p>
+                <div class="footer-social-links">
+                    <a href="https://www.instagram.com/oma___cakes" target="_blank" rel="noopener" aria-label="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://wa.me/213779811066" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="tel:+213779811066" aria-label="Direct Call">
+                        <span>Direct Call</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Luxury WhatsApp Concierge Button -->
+    <aside class="floating-concierge" aria-label="Quick WhatsApp Concierge">
+        <a href="https://wa.me/213779811066?text=Hello%20OMA%20Cake,%20I%20would%20like%20to%20inquire%20about%20a%20bespoke%20cake%20order." target="_blank" rel="noopener" class="concierge-btn" aria-label="Chat with OMA Cake on WhatsApp">
+            <div class="concierge-pulse"></div>
+            <svg class="concierge-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.17 8.19 0 0 1-1.25-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.45.06-.69.32-.23.25-.89.87-.89 2.12s.91 2.46 1.04 2.63c.13.17 1.79 2.73 4.33 3.83.6.26 1.08.42 1.45.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+            </svg>
+            <span class="concierge-tooltip">Reserve on WhatsApp</span>
+        </a>
+    </aside>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
